@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Rock.ma
-//Last modified: Fri, Sep 05, 2025 06:40:30 PM
+//Last modified: Fri, Sep 05, 2025 07:14:02 PM
 //Codeset: 1252
 file -rdi 1 -ns "First_work_posted_on_artstation_is_done__Rune_" -rfn "First_work_posted_on_artstation_is_done__Rune_RN"
 		 -typ "image" "C:/Users/lilwe/Downloads/First work posted on artstation is done! Rune….jpg";
@@ -16,12 +16,12 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "A3CB16F2-401E-2026-A7A3-CFA7A24343D8";
+fileInfo "UUID" "878FA099-4AD2-7F9C-E560-0E88CE156793";
 createNode transform -s -n "persp";
 	rename -uid "8D76BE51-45AB-ABDC-8BBE-05A40499F308";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 2.9630683755246774 9.4091015422082371 20.500846579144238 ;
-	setAttr ".r" -type "double3" -15.599999999999993 -1071.5999999995995 2.0094028809669761e-16 ;
+	setAttr ".t" -type "double3" 4.5169667447684914 0.68197166521216346 20.820177914266285 ;
+	setAttr ".r" -type "double3" 7.8000000000005629 -1067.6000000000645 3.0529892984748962e-16 ;
 	setAttr ".rpt" -type "double3" -8.6063097209588566e-16 -7.4937589293925995e-16 9.3473875079026755e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "719137E1-4682-6A0B-8EC7-B3A80F23B2B8";
@@ -440,7 +440,7 @@ createNode file -n "file1";
 createNode place2dTexture -n "place2dTexture1";
 	rename -uid "0EE6F258-4DB6-4E52-59F2-6CA750D5CBA8";
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "710E16A0-44AF-311D-7ABE-588AEF97D225";
+	rename -uid "44A1C1B4-476E-2F33-9A85-24B5355D22E6";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
