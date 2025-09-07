@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Juice.ma
-//Last modified: Sat, Sep 06, 2025 10:53:03 PM
+//Last modified: Sat, Sep 06, 2025 10:55:49 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,17 +11,17 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "5FC77564-46C2-E293-F5A3-1AB9F876E325";
+fileInfo "UUID" "5FD21B69-44CB-82A2-8781-2D8898C37848";
 createNode transform -s -n "persp";
 	rename -uid "CF538038-4248-223B-8330-DB946E72D26D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -4.0734663427816855 16.843474684709633 25.558048559673388 ;
-	setAttr ".r" -type "double3" -29.738352729296039 1074.1999999996035 1.9980754056999106e-16 ;
+	setAttr ".t" -type "double3" -1.0082995646902155 10.612258252142539 22.944885519666848 ;
+	setAttr ".r" -type "double3" -11.138352729302522 1080.5999999993173 -4.7213947323656614e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C1BDBBC9-4519-CEE7-8B3A-0C9D845C6865";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 29.187535707596396;
+	setAttr ".coi" 23.553267237022279;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -100,13 +100,19 @@ createNode mesh -n "OutsideShape" -p "Outside";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.375 ;
+	setAttr ".pv" -type "double2" 0.62478676438331604 0.25382328033447266 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 40 ".pt";
+	setAttr -s 47 ".pt";
+	setAttr ".pt[18]" -type "float3" -4.6566129e-10 0 -9.3132257e-10 ;
+	setAttr ".pt[19]" -type "float3" 0 9.3132257e-10 0 ;
+	setAttr ".pt[20]" -type "float3" -9.3132257e-10 2.3283064e-10 4.6566129e-10 ;
+	setAttr ".pt[21]" -type "float3" -2.7939677e-09 -9.3132257e-10 0 ;
+	setAttr ".pt[22]" -type "float3" 9.3132257e-10 -1.8626451e-09 0 ;
+	setAttr ".pt[23]" -type "float3" 2.7939677e-09 9.3132257e-10 0 ;
 	setAttr ".pt[48]" -type "float3" 0.09390457 0 0 ;
 	setAttr ".pt[49]" -type "float3" 0.092300817 0 0 ;
 	setAttr ".pt[50]" -type "float3" 0.088428982 0 0 ;
@@ -143,6 +149,7 @@ createNode mesh -n "OutsideShape" -p "Outside";
 	setAttr ".pt[81]" -type "float3" 0.088428982 0.041880332 0 ;
 	setAttr ".pt[82]" -type "float3" 0.092300817 0.041880332 0 ;
 	setAttr ".pt[83]" -type "float3" 0.09390457 0.041880332 0 ;
+	setAttr ".pt[87]" -type "float3" 2.3283064e-10 0 0 ;
 	setAttr ".pt[92]" -type "float3" 0.09158925 0.041880332 0 ;
 	setAttr ".pt[93]" -type "float3" -0.09158925 0.041880332 0 ;
 	setAttr ".pt[94]" -type "float3" -0.09158925 0.041880332 0 ;
@@ -6063,7 +6070,7 @@ createNode polySphere -n "polySphere1";
 createNode polySphere -n "polySphere2";
 	rename -uid "F0F4AA50-4569-DC82-B628-8A8AFC186171";
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "033D2C82-44EE-EA1F-7528-F097A3EE2B9B";
+	rename -uid "18258F4A-4428-E946-E229-53B87B7E2198";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
