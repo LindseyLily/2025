@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Juice.ma
-//Last modified: Tue, Sep 09, 2025 04:20:11 PM
+//Last modified: Tue, Sep 09, 2025 04:21:08 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,17 +11,17 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "52333EBB-4476-BA8A-096F-33A4327E7F97";
+fileInfo "UUID" "EA31DF06-4B7E-0D61-6BFB-1E82F5750353";
 createNode transform -s -n "persp";
 	rename -uid "CF538038-4248-223B-8330-DB946E72D26D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.95485691963480346 9.1390575313923286 1.5865516049939334 ;
+	setAttr ".t" -type "double3" 0.93359626466430645 12.618560610442302 7.677255852112931 ;
 	setAttr ".r" -type "double3" -29.738352822510059 2879.7999999995918 1.1430188023126753e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C1BDBBC9-4519-CEE7-8B3A-0C9D845C6865";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 4.1810989313808635;
+	setAttr ".coi" 11.195660351629559;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -12212,7 +12212,7 @@ createNode polyTweakUV -n "polyTweakUV6";
 		 0.23525059 1.068028092 -0.20943184 1.088478446 -0.84489173 0.63899136 -0.47272786
 		 0.79989523 -0.48528275 1.20800197 -0.9332456 0.77550614 -0.48540324 0.61686081 -0.4586772;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "9BD7B316-40A7-01B0-6091-F895EC0B5F2F";
+	rename -uid "E466B410-48B0-CFC7-B12B-938F8558B069";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
