@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: LilPiano.ma
-//Last modified: Sun, Oct 05, 2025 11:36:08 PM
+//Last modified: Sun, Oct 05, 2025 11:37:42 PM
 //Codeset: 1252
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -13,12 +13,12 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "43C3DD9C-4991-34F6-1B70-25BBA2A2E925";
+fileInfo "UUID" "116C08AF-4B30-61A6-8F2D-DCA5DECAFA19";
 createNode transform -s -n "persp";
 	rename -uid "B0847ED0-4AA1-9739-98A6-9297B8225AB2";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 22.965892947806239 9.6714614153066698 20.780735475830959 ;
-	setAttr ".r" -type "double3" -20.400000000001889 45.600000000000513 0 ;
+	setAttr ".t" -type "double3" 3.346996266776106 28.823607391545011 -0.40515149278864371 ;
+	setAttr ".r" -type "double3" -93.600000000003334 -3.999999999999837 0 ;
 	setAttr ".rp" -type "double3" -2.4424906541753444e-14 -1.4654943925052066e-14 0 ;
 	setAttr ".rpt" -type "double3" 3.2543900791903237e-14 8.3195369532233356e-16 2.3474296974217049e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -4421,6 +4421,8 @@ createNode mesh -n "pCylinderShape3" -p "pCylinder3";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "pCube26";
 	rename -uid "304EED82-4FA7-128B-62BF-DAB3AF03E43A";
+	setAttr ".t" -type "double3" 0 6.4240291029758962 0 ;
+	setAttr ".s" -type "double3" 7.8068150370800824 1 2.5161499914265852 ;
 createNode mesh -n "pCubeShape26" -p "pCube26";
 	rename -uid "E4A9704E-4A87-DF13-0861-01BBA167E7EE";
 	setAttr -k off ".v";
@@ -4432,20 +4434,20 @@ createNode mesh -n "pCubeShape26" -p "pCube26";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "125E2C62-459F-5256-4721-39955F16D840";
+	rename -uid "37BB5495-4EE0-F653-11D8-419393A7D9E8";
 	setAttr -s 6 ".lnk";
 	setAttr -s 6 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "136FFF82-445F-1AE6-4F7E-C889E3CD2D7F";
+	rename -uid "28BD7201-4780-BB10-0E5C-A3A890E1F87A";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "E78D0825-4578-0D83-6040-2C9143DBAE2F";
+	rename -uid "5F73D38A-4AF8-E137-E399-EDAD9AC42C90";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "81E960FF-4E76-8FA9-EBCC-64A880EDA8DA";
+	rename -uid "1E7AB51C-49F6-135B-FCF2-9C94B3D5E45C";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "24A11A73-4FE6-D0C5-2082-BF89678672BF";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "34AC3919-41AF-07A4-AABF-4392498A14B2";
+	rename -uid "C7B0B52C-443D-BA7F-F953-9FAF451867BC";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "E7D1C3AA-4406-EB3B-09BD-D6AA9731102A";
 	setAttr ".g" yes;
@@ -4600,7 +4602,7 @@ createNode polyCube -n "polyCube2";
 	rename -uid "DE573D52-42CD-944F-31B9-59A3E7FDFBCC";
 	setAttr ".cuv" 4;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "BE01F319-40F9-FAD4-C3C3-FF9FA3E560FF";
+	rename -uid "28ABF0B5-4B91-5A80-16B7-C490173E7A4B";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
