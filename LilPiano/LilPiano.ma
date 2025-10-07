@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: LilPiano.ma
-//Last modified: Mon, Oct 06, 2025 10:29:35 PM
+//Last modified: Mon, Oct 06, 2025 10:30:14 PM
 //Codeset: 1252
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -13,12 +13,12 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "65650401-48FF-6329-3007-2A921B6A95A8";
+fileInfo "UUID" "F9BDA00D-4D60-CB74-7CF5-798F743E50D6";
 createNode transform -s -n "persp";
 	rename -uid "B0847ED0-4AA1-9739-98A6-9297B8225AB2";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 9.2745141078942659 16.452384855844329 33.436421095009649 ;
-	setAttr ".r" -type "double3" -20.400000000000052 375.59999999963492 0 ;
+	setAttr ".t" -type "double3" 19.678807959208676 10.937373308672692 30.421586465818287 ;
+	setAttr ".r" -type "double3" -11.400000000000166 393.19999999963392 0 ;
 	setAttr ".rp" -type "double3" -2.4424906541753444e-14 -1.4654943925052066e-14 0 ;
 	setAttr ".rpt" -type "double3" 3.2543900791903237e-14 8.3195369532233356e-16 2.3474296974217049e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -5010,7 +5010,7 @@ createNode shadingEngine -n "lambert4SG";
 createNode materialInfo -n "materialInfo5";
 	rename -uid "D9EDAD1E-4538-5551-D07E-A6A4A3AC2DFA";
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "244D5946-4228-3FA4-8811-BAB14DD301D9";
+	rename -uid "5E6B18F9-4084-5F0C-8A11-018D6F3E2050";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
