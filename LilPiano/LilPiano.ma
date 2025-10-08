@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: LilPiano.ma
-//Last modified: Mon, Oct 06, 2025 10:33:32 PM
+//Last modified: Mon, Oct 06, 2025 10:42:04 PM
 //Codeset: 1252
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "D1570772-41C8-C47E-07C4-FABF3CAC6AA1";
+fileInfo "UUID" "9ABD1CD4-4C74-DE70-EF49-76810CAE54CF";
 createNode transform -s -n "persp";
 	rename -uid "B0847ED0-4AA1-9739-98A6-9297B8225AB2";
 	setAttr ".v" no;
@@ -5683,7 +5683,7 @@ createNode animCurveTA -n "pCube29_rotateZ";
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 0;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "7F99397F-4CF5-89C1-E625-318EF92FA52B";
+	rename -uid "67039112-4728-8694-0D68-FEA913BB3BE8";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
