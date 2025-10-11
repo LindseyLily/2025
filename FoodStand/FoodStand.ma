@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: FoodStand.ma
-//Last modified: Fri, Oct 10, 2025 07:47:21 PM
+//Last modified: Fri, Oct 10, 2025 07:47:50 PM
 //Codeset: 1252
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -13,12 +13,12 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "6C5AFE19-4042-8DF6-7010-06BD11348E0B";
+fileInfo "UUID" "C270F245-4DDD-C507-B55F-D7B28D789CC4";
 createNode transform -s -n "persp";
 	rename -uid "037DDD8D-4CB5-18B8-3752-34A79A8418F9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 43.732936386433877 32.611183558438299 26.193291203398175 ;
-	setAttr ".r" -type "double3" -20.738352729596517 51.799999999997766 2.5715649280799392e-15 ;
+	setAttr ".t" -type "double3" 28.370129503353194 17.917608891658325 43.184585172079011 ;
+	setAttr ".r" -type "double3" -5.1383527295967086 27.399999999998368 -2.2390315702957342e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "6A1CF33F-42D3-11AA-FF05-6582ACE6CD21";
 	setAttr -k off ".v" no;
@@ -625,7 +625,7 @@ createNode polyCube -n "polyCube5";
 	rename -uid "96AE8983-4618-6F6B-F3B5-B8A52A5C4AA7";
 	setAttr ".cuv" 4;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "B2AD0C89-4F62-EC0F-2605-9F94924CB4D0";
+	rename -uid "C4CC17FC-4C17-E402-72BE-72921B66B6D4";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
