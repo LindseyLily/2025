@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: FoodStand.ma
-//Last modified: Sun, Oct 12, 2025 07:22:34 PM
+//Last modified: Sun, Oct 12, 2025 07:25:49 PM
 //Codeset: 1252
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -13,12 +13,12 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "A66F68E7-42DF-94C8-96D1-B88E11362E96";
+fileInfo "UUID" "8A27B259-4A2C-EFF9-AEB8-B6846CBC7053";
 createNode transform -s -n "persp";
 	rename -uid "037DDD8D-4CB5-18B8-3752-34A79A8418F9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 12.621939434493259 76.464035580008897 77.994325020619087 ;
-	setAttr ".r" -type "double3" -36.938352729598208 6.5999999999986274 0 ;
+	setAttr ".t" -type "double3" 46.218926158765079 63.440898767701469 76.209754882513352 ;
+	setAttr ".r" -type "double3" -28.538352729598216 27.799999999998739 -8.988873745250215e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "6A1CF33F-42D3-11AA-FF05-6582ACE6CD21";
 	setAttr -k off ".v" no;
@@ -537,20 +537,20 @@ createNode mesh -n "pCubeShape13" -p "pCube13";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "DB59E222-4BD8-BBEA-E9AD-3AB5B2172993";
+	rename -uid "35F5AAE6-4ADD-C08A-4248-1D85F98E708D";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "8F02A4A4-43A0-5E99-9585-4C866B1354C9";
+	rename -uid "389CF4F9-4A94-46F4-9BBE-5395F78B0A65";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "6D62AEC3-421A-A96A-F32A-E1B1F2A9134F";
+	rename -uid "07AF6F8B-454A-9A94-D388-2FB0DD8753A7";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "B354B188-42EC-BDF8-AAE0-71A137C20D16";
+	rename -uid "9E9A4EE1-4931-03BF-F779-79AB873B8A12";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "3766A39A-4FEA-6490-9267-88AFD4AB01F8";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "F3B9DF13-478C-F328-6532-09AB635D7AFC";
+	rename -uid "8A128966-4EAD-9F78-73CE-68A2F65FE922";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "7CD33380-41DB-066A-3D0F-60A88FF277F9";
 	setAttr ".g" yes;
@@ -650,7 +650,7 @@ createNode polySoftEdge -n "polySoftEdge1";
 		 11.799180520119329 14.039316856977216 8.12679012990505 1;
 	setAttr ".a" 180;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "5E7102D4-46D0-D037-13DB-DA828760DC6A";
+	rename -uid "06C84A17-4487-02FB-DD1A-6FB909EDA437";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
