@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Cage.ma
-//Last modified: Sat, Oct 18, 2025 12:06:50 AM
+//Last modified: Sat, Oct 18, 2025 12:08:29 AM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "sweepMeshCreator" -dataType "sweepMeshData" -dataType "sweepProfileData"
@@ -15,19 +15,19 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "5A8D83CE-426F-688C-20C7-8082C24A0675";
+fileInfo "UUID" "36F7A342-4B49-78F6-418E-A6A116632FBD";
 createNode transform -s -n "persp";
 	rename -uid "4330C74B-480F-6465-7685-97AF6F3CC496";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 4.624154622050102 6.058148637288177 -32.868624841657173 ;
-	setAttr ".r" -type "double3" 2.9999999999998899 171.19999999999948 0 ;
+	setAttr ".t" -type "double3" 12.045589774524599 20.286667580960835 -37.079288236708649 ;
+	setAttr ".r" -type "double3" -18.000000000000306 161.19999999999214 0 ;
 	setAttr ".rp" -type "double3" -7.8886090522101181e-31 8.8817841970012523e-16 7.1054273576010019e-15 ;
 	setAttr ".rpt" -type "double3" 6.5842309202399217e-15 1.1657904252960142e-15 -5.2880892373036313e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C821E427-4B79-22CA-CDF6-23A6B4AC9B35";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 32.688640959291241;
+	setAttr ".coi" 40.5082176341297;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -635,7 +635,7 @@ createNode mesh -n "sweepShape16" -p "sweep16";
 	setAttr ".cdvm[0]"  0 1 1;
 createNode transform -n "sweep17";
 	rename -uid "F13D1A8C-48FF-4926-D1B5-3EB114D9426C";
-	setAttr ".t" -type "double3" 0 0.036677719241812401 0 ;
+	setAttr ".t" -type "double3" 0 0.12567225716786412 0 ;
 	setAttr ".s" -type "double3" 1 1.0112263156214796 1 ;
 createNode mesh -n "sweepShape17" -p "sweep17";
 	rename -uid "24683AD0-464D-392C-292B-75B44DD8184D";
@@ -780,7 +780,7 @@ createNode sweepMeshCreator -n "sweepMeshCreator4";
 	setAttr ".interpolationPrecision" 100;
 	setAttr ".interpolationDistance" 3;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "E732A9A5-4AB6-B6CB-AD67-3CB664880BB3";
+	rename -uid "EC5EE22E-4537-F78E-4291-A2B6BACFA738";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
