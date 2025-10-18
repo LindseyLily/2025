@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Cage.ma
-//Last modified: Fri, Oct 17, 2025 11:50:34 PM
+//Last modified: Fri, Oct 17, 2025 11:53:11 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "sweepMeshCreator" -dataType "sweepMeshData" -dataType "sweepProfileData"
@@ -15,19 +15,19 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "DF8DA83F-415F-1E52-94FA-A3BAC058C7A0";
+fileInfo "UUID" "134CE2A8-47EB-0A3A-2367-A38D5606F608";
 createNode transform -s -n "persp";
 	rename -uid "4330C74B-480F-6465-7685-97AF6F3CC496";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 30.02027380240467 15.566274471737826 -9.7843850664334084 ;
-	setAttr ".r" -type "double3" -13.799999999995071 106.79999999997042 0 ;
+	setAttr ".t" -type "double3" -2.0261217008213235 7.4927096451812583 -26.934088224178691 ;
+	setAttr ".r" -type "double3" 0.5999999999999881 183.5999999999556 0 ;
 	setAttr ".rp" -type "double3" -7.8886090522101181e-31 8.8817841970012523e-16 7.1054273576010019e-15 ;
 	setAttr ".rpt" -type "double3" 6.5842309202399217e-15 1.1657904252960142e-15 -5.2880892373036313e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C821E427-4B79-22CA-CDF6-23A6B4AC9B35";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 32.688640959291199;
+	setAttr ".coi" 26.378530337141797;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -517,7 +517,6 @@ createNode mesh -n "sweepShape13" -p "sweep13";
 	setAttr ".cdvm[0]"  0 1 1;
 createNode transform -n "sweep14";
 	rename -uid "DAA5D2EA-4AA0-8EE0-A48B-CBAE5BAFB70E";
-	setAttr ".s" -type "double3" 1.0085976682150348 1.0085976682150348 1.0085976682150348 ;
 createNode mesh -n "sweepShape14" -p "sweep14";
 	rename -uid "16F29A6F-4673-3D7D-7DBE-948047B15B47";
 	setAttr -k off ".v";
@@ -647,12 +646,13 @@ createNode sweepMeshCreator -n "sweepMeshCreator2";
 	setAttr ".profileRectCornerRadius" 0.4;
 	setAttr ".profileWaveAmplitude" 0.25;
 	setAttr ".scaleProfileX" 0.25;
+	setAttr ".rotateProfile" 43.516483685963749;
 	setAttr -s 2 ".taperCurve[0:1]"  0 1 1 1 1 1;
 	setAttr ".interpolationDistance" 3;
 	setAttr -s 3 ".inCurveArray";
 	setAttr -s 3 ".outMeshArray";
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "4D965E07-4881-97EF-7143-FA84B24E8341";
+	rename -uid "B75559EB-47EE-0D76-9103-BAB7048A9140";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
